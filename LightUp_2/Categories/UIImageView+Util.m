@@ -8,6 +8,12 @@
 
 #import "UIImageView+Util.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @implementation UIImageView (Util)
+
+- (void)loadAvatar:(NSURL *)avatarURL {
+    [self sd_setImageWithURL:avatarURL placeholderImage:[UIImage imageNamed:@"default-avatar"] options:0];
+}
 
 @end

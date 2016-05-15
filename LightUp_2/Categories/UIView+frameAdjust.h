@@ -10,4 +10,16 @@
 
 @interface UIView (frameAdjust)
 
+- (CGFloat)x;
+- (void)setX:(CGFloat)x;
+
+- (CGFloat)y;
+- (void)setY:(CGFloat)y;
+
+- (CGFloat)heigh;
+- (void)setHeigh:(CGFloat)heigh;
+
+- (CGFloat)width;
+- (void)setWidth:(CGFloat)width;
+
 @end

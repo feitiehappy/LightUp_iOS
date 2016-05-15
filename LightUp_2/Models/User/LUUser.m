@@ -10,4 +10,29 @@
 
 @implementation LUUser
 
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"userID": @"data.space.uid",
+             @"username": @"data.space.username",
+             @"name": @"data.space.name",
+             @"sex": @"data.space.sex",
+             @"avatarUrl": @"data.space.avatar_url",
+             @"experience": @"data.space.experience",
+             @"friendNum": @"data.space.friendnum",
+             @"addFriendNum": @"data.space.addfriendnum",
+             @"voterNum": @"data.space.voternum",
+             @"age": @"data.space.age",
+             @"newpm": @"data.space.newpm",
+             @"allNoteNum": @"data.space.allnotenum"
+             };
+}
+
+- (BOOL)isEqual:(id)object {
+    if ([self class] == [object class]) {
+        return self.userID == ((LUUser*)object).userID;
+    }
+    
+    return NO;
+}
+
 @end

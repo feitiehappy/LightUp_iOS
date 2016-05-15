@@ -10,4 +10,6 @@
 
 @interface UIImageView (Util)
 
+- (void)loadAvatar:(NSURL *)avatarURL;
+
 @end
