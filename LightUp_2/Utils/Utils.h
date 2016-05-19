@@ -22,4 +22,7 @@
 #endif
 
 
-#define RGB(A, B, C) [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:1.0]
+#define RGB(A, B, C, D) [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:D]
+
+
+#define THEMECOLOR RGB(67, 142, 41, 0.95)

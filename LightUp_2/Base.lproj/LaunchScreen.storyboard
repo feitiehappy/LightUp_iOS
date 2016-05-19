@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +18,40 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lead_page_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Tgk-md-dv6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lead_page_title" translatesAutoresizingMaskIntoConstraints="NO" id="JCc-Z6-hLJ">
+                                <rect key="frame" x="50" y="377" width="500" height="141.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JCc-Z6-hLJ" secondAttribute="height" multiplier="269:76" id="BhF-ps-rkN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JCc-Z6-hLJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0vK-TM-Ztn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tgk-md-dv6" secondAttribute="trailing" id="GRj-nh-3W4"/>
+                            <constraint firstItem="Tgk-md-dv6" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Ges-ky-zc6"/>
+                            <constraint firstItem="Tgk-md-dv6" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="KAO-cf-9IN"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Tgk-md-dv6" secondAttribute="bottom" id="Pc9-H1-oDK"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="JCc-Z6-hLJ" secondAttribute="bottom" constant="81" id="Wos-P0-EYU"/>
+                            <constraint firstItem="Tgk-md-dv6" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="YLa-ip-QBP"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Tgk-md-dv6" secondAttribute="bottom" id="bou-B2-R5S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JCc-Z6-hLJ" secondAttribute="trailing" constant="30" id="lAK-Vd-AL1"/>
+                            <constraint firstAttribute="trailing" secondItem="Tgk-md-dv6" secondAttribute="trailing" id="vJa-ij-vUZ"/>
+                            <constraint firstItem="JCc-Z6-hLJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="xF0-UT-Nmk"/>
+                            <constraint firstItem="Tgk-md-dv6" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="xcD-Ug-sUA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GRj-nh-3W4"/>
+                                <exclude reference="YLa-ip-QBP"/>
+                                <exclude reference="xcD-Ug-sUA"/>
+                                <exclude reference="bou-B2-R5S"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +59,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lead_page_bg" width="360" height="640"/>
+        <image name="lead_page_title" width="243" height="64"/>
+    </resources>
 </document>

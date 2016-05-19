@@ -7,7 +7,18 @@
 //
 
 #import "LUNavigationController.h"
+#import "Utils.h"
 
 @implementation LUNavigationController
+
+- (void)viewDidLoad {
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationBar.barTintColor = THEMECOLOR;
+    [self.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+}
 
 @end

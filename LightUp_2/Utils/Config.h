@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @class LUUser;
 
@@ -19,6 +20,11 @@
 + (void)clearProfile;
 + (LUUser *)myProfile;
 
++ (void)saveAvatar:(UIImage *)avatar;
+
++ (NSArray *)getOwnAccountAndPassword;
 + (int64_t)getOwnID;
++ (NSString *)getOwnUserName;
++ (UIImage *)getAvatar;
 
 @end

@@ -50,10 +50,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="EYW-wz-SWy" kind="relationship" relationship="rootViewController" id="X1d-Di-KZ0"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qz2-cL-SHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-78" y="1717"/>
+        </scene>
+        <!--Home Page Table View Controller-->
+        <scene sceneID="hB2-2l-eCE">
+            <objects>
+                <tableViewController storyboardIdentifier="HomePageTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EYW-wz-SWy" customClass="HomePageTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="oZL-7n-ruu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="2WI-i6-9NZ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="N3I-k3-yuE">
+                                        <rect key="frame" x="0.0" y="99" width="600" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N3I-k3-yuE" id="fie-he-OFU">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="HPCategoryUICollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KQi-sj-KE0">
+                                                    <rect key="frame" x="6" y="6" width="588" height="53.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="6" id="7am-kH-uF0">
+                                                        <size key="itemSize" width="45" height="45"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="EYW-wz-SWy" id="N3f-k9-oi7"/>
+                                                        <outlet property="delegate" destination="oZL-7n-ruu" id="sfM-nS-A5N"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="KQi-sj-KE0" secondAttribute="bottom" id="V2v-cE-Mhn"/>
+                                                <constraint firstItem="KQi-sj-KE0" firstAttribute="top" secondItem="fie-he-OFU" secondAttribute="top" constant="6" id="dRF-nL-lsL"/>
+                                                <constraint firstItem="KQi-sj-KE0" firstAttribute="leading" secondItem="fie-he-OFU" secondAttribute="leading" constant="6" id="edX-cp-dj8"/>
+                                                <constraint firstAttribute="trailing" secondItem="KQi-sj-KE0" secondAttribute="trailing" constant="6" id="nOr-iY-1eQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="sGE-UW-bIF">
+                                <cells/>
+                            </tableViewSection>
+                        </sections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="8VO-Bp-jk9"/>
+                    <connections>
+                        <outlet property="categoryCollectionView" destination="KQi-sj-KE0" id="Pjk-TB-8cg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGn-Z1-QRH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="1730"/>
         </scene>
     </scenes>
 </document>

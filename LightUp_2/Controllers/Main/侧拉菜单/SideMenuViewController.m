@@ -18,17 +18,17 @@
 #import <RESideMenu/RESideMenu.h>
 #import <Masonry/Masonry.h>
 
-CGFloat const kHeaderViewHeigh = 270;
-CGFloat const kAvatarHeight = 87;
+CGFloat const kHeaderViewHeigh = 260;
+CGFloat const kAvatarHeight = 73;
 CGFloat const kNameLabelWidth = 200;
-CGFloat const kAvatarCornerRadius = 45;
+CGFloat const kAvatarCornerRadius = 36;
 
 CGFloat const kAvatarTopOffset = 108;
 CGFloat const kAvatarLeftOffset = -25;
 CGFloat const kNameLabelTopOffset = 9;
 
 CGFloat const kCellTitleLeftOffset = -20;
-CGFloat const kCellIconHeigh = 25;
+CGFloat const kCellIconHeigh = 21;
 
 @interface SideMenuViewController ()
 
@@ -39,13 +39,11 @@ CGFloat const kCellIconHeigh = 25;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.tableView.opaque = NO;
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"left_slide_bg"]];
+    
+    // 禁止滑动
+    self.tableView.scrollEnabled = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,7 +77,7 @@ CGFloat const kCellIconHeigh = 25;
     
     UILabel *nameLabel = [[UILabel alloc] init];
     nameLabel.text = myProfile.username;
-    nameLabel.font = [UIFont systemFontOfSize:16.8];
+    nameLabel.font = [UIFont systemFontOfSize:14];
     nameLabel.textColor = [UIColor whiteColor];
     nameLabel.textAlignment = NSTextAlignmentCenter;
     [headerView addSubview:nameLabel];
@@ -118,7 +116,7 @@ CGFloat const kCellIconHeigh = 25;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
+    return 40;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -126,17 +124,17 @@ CGFloat const kCellIconHeigh = 25;
     
     cell.backgroundColor = [UIColor clearColor];
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
-    cell.selectedBackgroundView.backgroundColor = RGB(233, 233, 233);
+    cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:53/255 green:127/255 blue:42/255 alpha:0.4];
     
     UILabel *titleLabel = [[UILabel alloc] init];
     [cell addSubview:titleLabel];
-    titleLabel.font = [UIFont systemFontOfSize:17];
+    titleLabel.font = [UIFont boldSystemFontOfSize:14];
     titleLabel.textColor = [UIColor whiteColor];
-    titleLabel.text = @[@"主      页",
-                            @"我 的 消 息",
+    titleLabel.text = @[@"主        页",
+                            @"我的消息",
                             @"我的咨询",
                             @"我要咨询",
-                            @"设    置"][indexPath.row];
+                            @"设        置"][indexPath.row];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(cell.mas_centerX).offset(kCellTitleLeftOffset);
         make.top.equalTo(cell.mas_top);
@@ -152,9 +150,9 @@ CGFloat const kCellIconHeigh = 25;
                                                  @"icon_add_question",
                                                  @"icon_setting"][indexPath.row]];
     [iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(titleLabel.mas_left).offset(-30);
+        make.right.equalTo(titleLabel.mas_left).offset(-20);
         make.height.mas_equalTo(kCellIconHeigh);
-        make.width.mas_equalTo(kCellIconHeigh);
+        make.width.mas_equalTo(kCellIconHeigh+3);
         make.centerY.equalTo(titleLabel);
     }];
     
@@ -192,7 +190,8 @@ CGFloat const kCellIconHeigh = 25;
     if ([Config getOwnID] == 0) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
         LoginViewController *loginVC = [storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
-        [self setContentViewController:loginVC];
+        //[self setContentViewController:loginVC];
+        [self presentViewController:loginVC animated:YES completion:nil];
     } else {
         return;
     }

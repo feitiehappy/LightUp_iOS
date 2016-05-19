@@ -17,6 +17,7 @@ NSString * const kUserID = @"userID";
 
 NSString * const kUserName = @"username";
 NSString * const kAvatarUrl = @"avatarUrl";
+NSString * const kAvatar = @"avatar";
 NSString * const kExperience = @"experience";
 NSString * const kFriendNum = @"friendNum";
 NSString * const kAddFriendNum = @"addFriendNum";
@@ -109,9 +110,32 @@ NSString * const kAllNoteNum = @"allNoteNum";
     return user;
 }
 
-+ (int64_t)getOwnID
-{
++ (void)saveAvatar:(UIImage *)avatar {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:UIImagePNGRepresentation(avatar) forKey:kAvatar];
+    
+    [userDefaults synchronize];
+}
+
++ (NSArray *)getOwnAccountAndPassword {
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *account = [userDefault objectForKey:kAccount];
+    NSString *password = [SSKeychain passwordForService:kService account:account];
+    
+    if (account) {return @[account, password];}
+    return nil;
+}
+
++ (int64_t)getOwnID {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     return [userDefaults integerForKey:kUserID];
 }
+
++ (UIImage *)getAvatar {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    UIImage *avatar = [UIImage imageWithData:[userDefaults objectForKey:kAvatar]];
+    
+    return avatar;
+}
+
 @end

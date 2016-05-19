@@ -19,7 +19,7 @@
     self.scaleContentView = YES;
     self.contentViewScaleValue = 0.68;
     self.scaleMenuView = NO;
-    self.contentViewShadowEnabled = YES;
+    self.contentViewShadowEnabled = NO;
     self.contentViewShadowRadius = 1.5;
     
     self.contentViewController = [self.storyboard
