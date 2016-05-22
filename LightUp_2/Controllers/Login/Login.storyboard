@@ -68,6 +68,9 @@
                                 <state key="normal" title="注册">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="SkipToRegister" destination="2hZ-3Y-hCB" eventType="touchUpInside" id="Kzg-S3-gGB"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="登录_07" translatesAutoresizingMaskIntoConstraints="NO" id="4j2-Vf-1U0">
                                 <rect key="frame" x="548" y="160" width="17" height="17"/>

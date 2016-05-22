@@ -32,6 +32,8 @@
 		21CE9F0D1CE5C448000CFBE1 /* LUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CE9F0C1CE5C448000CFBE1 /* LUUser.m */; };
 		21CE9F101CE5EC00000CFBE1 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CE9F0F1CE5EC00000CFBE1 /* Config.m */; };
 		6A41732780C0CABA46021B38 /* Pods_LightUp_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5889FCA11D90C98D75B692D4 /* Pods_LightUp_2.framework */; };
+		6F938BCD1CF1CB610096FBDD /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F938BCC1CF1CB610096FBDD /* Register.storyboard */; };
+		6F938BD01CF1CFB90096FBDD /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F938BCF1CF1CFB80096FBDD /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,9 @@
 		21CE9F0E1CE5EC00000CFBE1 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Utils/Config.h; sourceTree = "<group>"; };
 		21CE9F0F1CE5EC00000CFBE1 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Config.m; path = Utils/Config.m; sourceTree = "<group>"; };
 		5889FCA11D90C98D75B692D4 /* Pods_LightUp_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightUp_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F938BCC1CF1CB610096FBDD /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		6F938BCE1CF1CFB80096FBDD /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		6F938BCF1CF1CFB80096FBDD /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +260,7 @@
 		21CE9E991CE4CDEE000CFBE1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6F938BCB1CF1CB3A0096FBDD /* Register */,
 				2171F3551CE8377800B46143 /* Login */,
 				21CE9EBB1CE4E631000CFBE1 /* Main */,
 			);
@@ -342,6 +348,17 @@
 				1A4968E1BECF987AAC108497 /* Pods-LightUp_2.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F938BCB1CF1CB3A0096FBDD /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				6F938BCC1CF1CB610096FBDD /* Register.storyboard */,
+				6F938BCE1CF1CFB80096FBDD /* RegisterViewController.h */,
+				6F938BCF1CF1CFB80096FBDD /* RegisterViewController.m */,
+			);
+			name = Register;
+			path = Controllers/Register;
 			sourceTree = "<group>";
 		};
 		C082738A401D801E1FB2FDF8 /* Frameworks */ = {
@@ -461,6 +478,7 @@
 			files = (
 				2171F3571CE8378C00B46143 /* Login.storyboard in Resources */,
 				211B03F41CE4814800731006 /* LaunchScreen.storyboard in Resources */,
+				6F938BCD1CF1CB610096FBDD /* Register.storyboard in Resources */,
 				21B28CCA1CE9FD1E004B41D6 /* HPCategoryCollectionCell.xib in Resources */,
 				211B03F11CE4814800731006 /* Assets.xcassets in Resources */,
 				211B03EF1CE4814800731006 /* Main.storyboard in Resources */,
@@ -538,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				215683351CE6C20F00C14D07 /* UIView+Util.m in Sources */,
+				6F938BD01CF1CFB90096FBDD /* RegisterViewController.m in Sources */,
 				21195B5B1CEC670D00D39940 /* LUNetWork.m in Sources */,
 				21B28CD41CEAD900004B41D6 /* HPQuestionCell.m in Sources */,
 				21CE9EBE1CE4E697000CFBE1 /* SideMenuViewController.m in Sources */,

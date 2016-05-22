@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *clover;
 @property (weak, nonatomic) IBOutlet UITextField *UserName;
 @property (weak, nonatomic) IBOutlet UITextField *UserPassword;
+- (IBAction)SkipToRegister;
 
 @end
 
@@ -41,4 +42,9 @@
 }
 */
 
+- (IBAction)SkipToRegister {
+    UIStoryboard *RegisterStoryBoard=[UIStoryboard storyboardWithName:@"Register" bundle:nil];
+    UIViewController *RegisterViewControl=[RegisterStoryBoard instantiateViewControllerWithIdentifier:@"RegisterViewController"];
+    [self presentViewController:RegisterViewControl animated:YES completion:nil];
+}
 @end
