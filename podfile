@@ -12,4 +12,5 @@ pod 'TTTAttributedLabel'
 pod 'SSKeychain'
 pod 'MJRefresh'
 pod 'Mantle'
+pod 'UITableView+FDTemplateLayoutCell'
 end

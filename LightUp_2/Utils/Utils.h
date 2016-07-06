@@ -26,3 +26,6 @@
 
 
 #define THEMECOLOR RGB(67, 142, 41, 0.95)
+
+
+#define BASE_URL @"https://ucqa.dawnlightning.com/"

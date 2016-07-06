@@ -7,6 +7,9 @@
 //
 
 #import "HPQuestionCell.h"
+#import "Utils.h"
+
+#import <DateTools/DateTools.h>
 
 @implementation HPQuestionCell
 
@@ -33,11 +36,26 @@
 }
 
 + (NSValueTransformer *)picsJSONTransformer {
-    return [MTLValueTransformer transformerUsingForwardBlock:^(NSString *str, BOOL *success, NSError **error){
-        NSArray *array = [NSJSONSerialization JSONObjectWithData:[str dataUsingEncoding:NSASCIIStringEncoding] options:NSJSONReadingAllowFragments error:nil];
-        return array;
+    return [MTLValueTransformer transformerUsingForwardBlock:^(NSArray *array, BOOL *success, NSError **error){
+        if(array == nil) return @[];
+        NSMutableArray *urlArray = [[NSMutableArray alloc] init];
+        for (NSDictionary *item in array) {
+            [urlArray addObject:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@", BASE_URL, item[@"picurl"]]]];
+        }
+        return [NSArray arrayWithArray:urlArray];
     } reverseBlock:^(NSArray *array, BOOL *success, NSError **error) {
+        // 这一段block不知道有啥用
+        // 下次省略
         return array;
+    }];
+}
+
++ (NSValueTransformer *)datelineJSONTransformer {
+    return [MTLValueTransformer transformerUsingForwardBlock:^(NSString *str, BOOL *success, NSError **error) {
+        NSDate *timeAgoDate = [NSDate dateWithTimeIntervalSince1970:str.floatValue];
+        return timeAgoDate.timeAgoSinceNow;
+    }reverseBlock:^(NSString *time, BOOL *success, NSError **error) {
+        return time;
     }];
 }
 

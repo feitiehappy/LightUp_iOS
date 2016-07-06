@@ -27,6 +27,7 @@ PODS:
   - SDWebImage/Core (3.7.5)
   - SSKeychain (1.4.0)
   - TTTAttributedLabel (1.13.4)
+  - UITableView+FDTemplateLayoutCell (1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - SDWebImage
   - SSKeychain
   - TTTAttributedLabel
+  - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
@@ -51,7 +53,8 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: 53c113d5fc41c112b5fade2a462204688fd296cd
+PODFILE CHECKSUM: 1f3f62de517ff102cae8ec0d119af44afd0e5feb
 
 COCOAPODS: 1.0.0

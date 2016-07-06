@@ -51,12 +51,31 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="EYW-wz-SWy" kind="relationship" relationship="rootViewController" id="X1d-Di-KZ0"/>
+                        <segue destination="hzx-NM-hEP" kind="relationship" relationship="rootViewController" id="s8S-K6-xYq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qz2-cL-SHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-78" y="1717"/>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="WM5-YO-tee">
+            <objects>
+                <viewController storyboardIdentifier="HomePageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hzx-NM-hEP" customClass="HomePageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lmj-ol-Ugn"/>
+                        <viewControllerLayoutGuide type="bottom" id="YzZ-4s-F0N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dcv-1I-aDH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pfb-Sf-Di7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vfk-Lr-Tbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="2519"/>
         </scene>
         <!--Home Page Table View Controller-->
         <scene sceneID="hB2-2l-eCE">
@@ -70,7 +89,7 @@
                             <tableViewSection id="2WI-i6-9NZ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="N3I-k3-yuE">
-                                        <rect key="frame" x="0.0" y="99" width="600" height="60"/>
+                                        <rect key="frame" x="0.0" y="35" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N3I-k3-yuE" id="fie-he-OFU">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>

@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *UserName;
 @property (weak, nonatomic) IBOutlet UITextField *UserPassword;
 - (IBAction)SkipToRegister;
+- (IBAction)IdentifyLogin:(UIButton *)sender;
 
 @end
 
@@ -32,19 +33,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)SkipToRegister {
     UIStoryboard *RegisterStoryBoard=[UIStoryboard storyboardWithName:@"Register" bundle:nil];
     UIViewController *RegisterViewControl=[RegisterStoryBoard instantiateViewControllerWithIdentifier:@"RegisterViewController"];
     [self presentViewController:RegisterViewControl animated:YES completion:nil];
 }
+
+- (IBAction)IdentifyLogin:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */

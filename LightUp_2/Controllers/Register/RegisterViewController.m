@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *Username;
 @property (weak, nonatomic) IBOutlet UITextField *FirstImportPassword;
 @property (weak, nonatomic) IBOutlet UITextField *SecondImportPassword;
+- (IBAction)IdentifyRegister:(UIButton *)sender;
+
 
 @end
 
@@ -31,6 +33,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)IdentifyRegister:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 
@@ -40,5 +45,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

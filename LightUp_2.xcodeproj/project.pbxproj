@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21186DF41CEDB4D7009F36D6 /* HomePageDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 21186DF31CEDB4D7009F36D6 /* HomePageDataSource.m */; };
+		21186DF91CEDBAB2009F36D6 /* HomePageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21186DF81CEDBAB2009F36D6 /* HomePageTableView.m */; };
+		21186DFC1CEDDC02009F36D6 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21186DFB1CEDDC02009F36D6 /* HomePageViewController.m */; };
 		21195B5B1CEC670D00D39940 /* LUNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 21195B5A1CEC670D00D39940 /* LUNetWork.m */; };
 		211B03E61CE4814800731006 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B03E51CE4814800731006 /* main.m */; };
 		211B03E91CE4814800731006 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B03E81CE4814800731006 /* AppDelegate.m */; };
@@ -15,13 +18,13 @@
 		211B03F41CE4814800731006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211B03F21CE4814800731006 /* LaunchScreen.storyboard */; };
 		211B03FF1CE4814800731006 /* LightUp_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B03FE1CE4814800731006 /* LightUp_2Tests.m */; };
 		211B040A1CE4814800731006 /* LightUp_2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B04091CE4814800731006 /* LightUp_2UITests.m */; };
+		214EA5AE1CFEF57900647286 /* HPTableCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 214EA5AD1CFEF57900647286 /* HPTableCollectionView.m */; };
 		215683351CE6C20F00C14D07 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 215683341CE6C20F00C14D07 /* UIView+Util.m */; };
 		215683381CE6C4F600C14D07 /* UIImageView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 215683371CE6C4F600C14D07 /* UIImageView+Util.m */; };
 		2171F3571CE8378C00B46143 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2171F3561CE8378C00B46143 /* Login.storyboard */; };
 		2171F35A1CE837C000B46143 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2171F3591CE837C000B46143 /* LoginViewController.m */; };
 		2174FD111CEB4A8A00B527D2 /* HPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2174FD101CEB4A8A00B527D2 /* HPTableViewCell.m */; };
 		2174FD131CEB4AA600B527D2 /* HPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2174FD121CEB4AA600B527D2 /* HPTableViewCell.xib */; };
-		2199AFDD1CE9DC2000A09194 /* HomePageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2199AFDC1CE9DC2000A09194 /* HomePageTableViewController.m */; };
 		21B28CCA1CE9FD1E004B41D6 /* HPCategoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21B28CC91CE9FD1E004B41D6 /* HPCategoryCollectionCell.xib */; };
 		21B28CCD1CE9FD93004B41D6 /* HPCategoryCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B28CCC1CE9FD93004B41D6 /* HPCategoryCollectionCell.m */; };
 		21B28CD41CEAD900004B41D6 /* HPQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B28CD31CEAD900004B41D6 /* HPQuestionCell.m */; };
@@ -31,9 +34,11 @@
 		21CE9EC11CE58AC7000CFBE1 /* LUNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CE9EC01CE58AC7000CFBE1 /* LUNavigationController.m */; };
 		21CE9F0D1CE5C448000CFBE1 /* LUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CE9F0C1CE5C448000CFBE1 /* LUUser.m */; };
 		21CE9F101CE5EC00000CFBE1 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CE9F0F1CE5EC00000CFBE1 /* Config.m */; };
+		21D1F1CC1CF41BB2001A4E5A /* HPTableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D1F1CB1CF41BB2001A4E5A /* HPTableCollectionViewCell.m */; };
+		21D1F1CE1CF41BD9001A4E5A /* HPTableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F1CD1CF41BD9001A4E5A /* HPTableCollectionViewCell.xib */; };
 		6A41732780C0CABA46021B38 /* Pods_LightUp_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5889FCA11D90C98D75B692D4 /* Pods_LightUp_2.framework */; };
-		6F938BCD1CF1CB610096FBDD /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F938BCC1CF1CB610096FBDD /* Register.storyboard */; };
-		6F938BD01CF1CFB90096FBDD /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F938BCF1CF1CFB80096FBDD /* RegisterViewController.m */; };
+		6F06E0EF1D2D5DA5009CE068 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F06E0EC1D2D5DA5009CE068 /* Register.storyboard */; };
+		6F06E0F01D2D5DA5009CE068 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F06E0EE1D2D5DA5009CE068 /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,12 @@
 /* Begin PBXFileReference section */
 		16E2E0E9E6A6A9429744DA71 /* Pods-LightUp_2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightUp_2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightUp_2/Pods-LightUp_2.debug.xcconfig"; sourceTree = "<group>"; };
 		1A4968E1BECF987AAC108497 /* Pods-LightUp_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightUp_2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightUp_2/Pods-LightUp_2.release.xcconfig"; sourceTree = "<group>"; };
+		21186DF21CEDB4D7009F36D6 /* HomePageDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomePageDataSource.h; path = Models/Main/HomePageDataSource.h; sourceTree = "<group>"; };
+		21186DF31CEDB4D7009F36D6 /* HomePageDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageDataSource.m; path = Models/Main/HomePageDataSource.m; sourceTree = "<group>"; };
+		21186DF71CEDBAB2009F36D6 /* HomePageTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomePageTableView.h; path = Views/Main/HomePage/HomePageTableView.h; sourceTree = "<group>"; };
+		21186DF81CEDBAB2009F36D6 /* HomePageTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageTableView.m; path = Views/Main/HomePage/HomePageTableView.m; sourceTree = "<group>"; };
+		21186DFA1CEDDC02009F36D6 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomePageViewController.h; path = Controllers/Main/HomePageViewController.h; sourceTree = "<group>"; };
+		21186DFB1CEDDC02009F36D6 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageViewController.m; path = Controllers/Main/HomePageViewController.m; sourceTree = "<group>"; };
 		21195B591CEC670D00D39940 /* LUNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LUNetWork.h; path = Utils/LUNetWork.h; sourceTree = "<group>"; };
 		21195B5A1CEC670D00D39940 /* LUNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LUNetWork.m; path = Utils/LUNetWork.m; sourceTree = "<group>"; };
 		211B03E11CE4814800731006 /* LightUp_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightUp_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +83,8 @@
 		211B04051CE4814800731006 /* LightUp_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightUp_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		211B04091CE4814800731006 /* LightUp_2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightUp_2UITests.m; sourceTree = "<group>"; };
 		211B040B1CE4814800731006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		214EA5AC1CFEF57900647286 /* HPTableCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPTableCollectionView.h; path = Views/Main/HomePage/HPTableCollectionView.h; sourceTree = "<group>"; };
+		214EA5AD1CFEF57900647286 /* HPTableCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPTableCollectionView.m; path = Views/Main/HomePage/HPTableCollectionView.m; sourceTree = "<group>"; };
 		215683331CE6C20F00C14D07 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Util.h"; path = "Categories/UIView+Util.h"; sourceTree = "<group>"; };
 		215683341CE6C20F00C14D07 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Util.m"; path = "Categories/UIView+Util.m"; sourceTree = "<group>"; };
 		215683361CE6C4F600C14D07 /* UIImageView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Util.h"; path = "Categories/UIImageView+Util.h"; sourceTree = "<group>"; };
@@ -82,8 +95,6 @@
 		2174FD0F1CEB4A8A00B527D2 /* HPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPTableViewCell.h; path = Views/Main/HomePage/HPTableViewCell.h; sourceTree = "<group>"; };
 		2174FD101CEB4A8A00B527D2 /* HPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPTableViewCell.m; path = Views/Main/HomePage/HPTableViewCell.m; sourceTree = "<group>"; };
 		2174FD121CEB4AA600B527D2 /* HPTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HPTableViewCell.xib; path = Views/Main/HomePage/HPTableViewCell.xib; sourceTree = "<group>"; };
-		2199AFDB1CE9DC2000A09194 /* HomePageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomePageTableViewController.h; path = Controllers/Main/HomePageTableViewController.h; sourceTree = "<group>"; };
-		2199AFDC1CE9DC2000A09194 /* HomePageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageTableViewController.m; path = Controllers/Main/HomePageTableViewController.m; sourceTree = "<group>"; };
 		21B28CC91CE9FD1E004B41D6 /* HPCategoryCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HPCategoryCollectionCell.xib; path = Views/Main/HomePage/HPCategoryCollectionCell.xib; sourceTree = "<group>"; };
 		21B28CCB1CE9FD93004B41D6 /* HPCategoryCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPCategoryCollectionCell.h; path = Views/Main/HomePage/HPCategoryCollectionCell.h; sourceTree = "<group>"; };
 		21B28CCC1CE9FD93004B41D6 /* HPCategoryCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPCategoryCollectionCell.m; path = Views/Main/HomePage/HPCategoryCollectionCell.m; sourceTree = "<group>"; };
@@ -102,10 +113,13 @@
 		21CE9F0C1CE5C448000CFBE1 /* LUUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LUUser.m; path = Models/User/LUUser.m; sourceTree = "<group>"; };
 		21CE9F0E1CE5EC00000CFBE1 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Utils/Config.h; sourceTree = "<group>"; };
 		21CE9F0F1CE5EC00000CFBE1 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Config.m; path = Utils/Config.m; sourceTree = "<group>"; };
+		21D1F1CA1CF41BB2001A4E5A /* HPTableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPTableCollectionViewCell.h; path = Views/Main/HomePage/HPTableCollectionViewCell.h; sourceTree = "<group>"; };
+		21D1F1CB1CF41BB2001A4E5A /* HPTableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPTableCollectionViewCell.m; path = Views/Main/HomePage/HPTableCollectionViewCell.m; sourceTree = "<group>"; };
+		21D1F1CD1CF41BD9001A4E5A /* HPTableCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HPTableCollectionViewCell.xib; path = Views/Main/HomePage/HPTableCollectionViewCell.xib; sourceTree = "<group>"; };
 		5889FCA11D90C98D75B692D4 /* Pods_LightUp_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightUp_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F938BCC1CF1CB610096FBDD /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
-		6F938BCE1CF1CFB80096FBDD /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
-		6F938BCF1CF1CFB80096FBDD /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		6F06E0EC1D2D5DA5009CE068 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Register.storyboard; path = Controllers/Register/Register.storyboard; sourceTree = "<group>"; };
+		6F06E0ED1D2D5DA5009CE068 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = Controllers/Register/RegisterViewController.h; sourceTree = "<group>"; };
+		6F06E0EE1D2D5DA5009CE068 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = Controllers/Register/RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +240,13 @@
 				2174FD0F1CEB4A8A00B527D2 /* HPTableViewCell.h */,
 				2174FD101CEB4A8A00B527D2 /* HPTableViewCell.m */,
 				2174FD121CEB4AA600B527D2 /* HPTableViewCell.xib */,
+				21186DF71CEDBAB2009F36D6 /* HomePageTableView.h */,
+				21186DF81CEDBAB2009F36D6 /* HomePageTableView.m */,
+				21D1F1CA1CF41BB2001A4E5A /* HPTableCollectionViewCell.h */,
+				21D1F1CB1CF41BB2001A4E5A /* HPTableCollectionViewCell.m */,
+				21D1F1CD1CF41BD9001A4E5A /* HPTableCollectionViewCell.xib */,
+				214EA5AC1CFEF57900647286 /* HPTableCollectionView.h */,
+				214EA5AD1CFEF57900647286 /* HPTableCollectionView.m */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -235,6 +256,8 @@
 			children = (
 				21B28CD21CEAD900004B41D6 /* HPQuestionCell.h */,
 				21B28CD31CEAD900004B41D6 /* HPQuestionCell.m */,
+				21186DF21CEDB4D7009F36D6 /* HomePageDataSource.h */,
+				21186DF31CEDB4D7009F36D6 /* HomePageDataSource.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -260,7 +283,7 @@
 		21CE9E991CE4CDEE000CFBE1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6F938BCB1CF1CB3A0096FBDD /* Register */,
+				6F06E0F11D2D5DB2009CE068 /* Register */,
 				2171F3551CE8377800B46143 /* Login */,
 				21CE9EBB1CE4E631000CFBE1 /* Main */,
 			);
@@ -321,13 +344,13 @@
 		21CE9EBB1CE4E631000CFBE1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				2199AFDB1CE9DC2000A09194 /* HomePageTableViewController.h */,
-				2199AFDC1CE9DC2000A09194 /* HomePageTableViewController.m */,
 				21CE9E9C1CE4CF42000CFBE1 /* RootViewController.h */,
 				21CE9E9D1CE4CF42000CFBE1 /* RootViewController.m */,
 				211B03ED1CE4814800731006 /* Main.storyboard */,
 				21CE9E9F1CE4D005000CFBE1 /* 侧拉菜单 */,
 				21CE9EA31CE4D100000CFBE1 /* Nav Bar */,
+				21186DFA1CEDDC02009F36D6 /* HomePageViewController.h */,
+				21186DFB1CEDDC02009F36D6 /* HomePageViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -350,15 +373,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		6F938BCB1CF1CB3A0096FBDD /* Register */ = {
+		6F06E0F11D2D5DB2009CE068 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				6F938BCC1CF1CB610096FBDD /* Register.storyboard */,
-				6F938BCE1CF1CFB80096FBDD /* RegisterViewController.h */,
-				6F938BCF1CF1CFB80096FBDD /* RegisterViewController.m */,
+				6F06E0EC1D2D5DA5009CE068 /* Register.storyboard */,
+				6F06E0ED1D2D5DA5009CE068 /* RegisterViewController.h */,
+				6F06E0EE1D2D5DA5009CE068 /* RegisterViewController.m */,
 			);
 			name = Register;
-			path = Controllers/Register;
 			sourceTree = "<group>";
 		};
 		C082738A401D801E1FB2FDF8 /* Frameworks */ = {
@@ -478,11 +500,12 @@
 			files = (
 				2171F3571CE8378C00B46143 /* Login.storyboard in Resources */,
 				211B03F41CE4814800731006 /* LaunchScreen.storyboard in Resources */,
-				6F938BCD1CF1CB610096FBDD /* Register.storyboard in Resources */,
 				21B28CCA1CE9FD1E004B41D6 /* HPCategoryCollectionCell.xib in Resources */,
+				21D1F1CE1CF41BD9001A4E5A /* HPTableCollectionViewCell.xib in Resources */,
 				211B03F11CE4814800731006 /* Assets.xcassets in Resources */,
 				211B03EF1CE4814800731006 /* Main.storyboard in Resources */,
 				2174FD131CEB4AA600B527D2 /* HPTableViewCell.xib in Resources */,
+				6F06E0EF1D2D5DA5009CE068 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,20 +579,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				215683351CE6C20F00C14D07 /* UIView+Util.m in Sources */,
-				6F938BD01CF1CFB90096FBDD /* RegisterViewController.m in Sources */,
 				21195B5B1CEC670D00D39940 /* LUNetWork.m in Sources */,
 				21B28CD41CEAD900004B41D6 /* HPQuestionCell.m in Sources */,
+				214EA5AE1CFEF57900647286 /* HPTableCollectionView.m in Sources */,
+				6F06E0F01D2D5DA5009CE068 /* RegisterViewController.m in Sources */,
 				21CE9EBE1CE4E697000CFBE1 /* SideMenuViewController.m in Sources */,
+				21186DFC1CEDDC02009F36D6 /* HomePageViewController.m in Sources */,
 				21CE9F101CE5EC00000CFBE1 /* Config.m in Sources */,
 				21CE9EB91CE4DF3F000CFBE1 /* UIView+frameAdjust.m in Sources */,
 				211B03E91CE4814800731006 /* AppDelegate.m in Sources */,
 				211B03E61CE4814800731006 /* main.m in Sources */,
+				21D1F1CC1CF41BB2001A4E5A /* HPTableCollectionViewCell.m in Sources */,
 				2174FD111CEB4A8A00B527D2 /* HPTableViewCell.m in Sources */,
 				21CE9EC11CE58AC7000CFBE1 /* LUNavigationController.m in Sources */,
 				21CE9F0D1CE5C448000CFBE1 /* LUUser.m in Sources */,
 				215683381CE6C4F600C14D07 /* UIImageView+Util.m in Sources */,
+				21186DF41CEDB4D7009F36D6 /* HomePageDataSource.m in Sources */,
+				21186DF91CEDBAB2009F36D6 /* HomePageTableView.m in Sources */,
 				21B28CCD1CE9FD93004B41D6 /* HPCategoryCollectionCell.m in Sources */,
-				2199AFDD1CE9DC2000A09194 /* HomePageTableViewController.m in Sources */,
 				2171F35A1CE837C000B46143 /* LoginViewController.m in Sources */,
 				21CE9E9E1CE4CF42000CFBE1 /* RootViewController.m in Sources */,
 			);

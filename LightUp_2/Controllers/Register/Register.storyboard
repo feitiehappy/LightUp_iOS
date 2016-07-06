@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -21,13 +21,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1高斯模糊后" translatesAutoresizingMaskIntoConstraints="NO" id="hfx-1h-Rke">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="登录_03" translatesAutoresizingMaskIntoConstraints="NO" id="MP4-BM-O8Z">
-                                <rect key="frame" x="268" y="20" width="64" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="78c-Y4-bS4"/>
-                                    <constraint firstAttribute="width" constant="64" id="t1e-Px-H8t"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置帐号" textAlignment="natural" minimumFontSize="17" background="下划线" translatesAutoresizingMaskIntoConstraints="NO" id="egM-cf-ue5">
                                 <rect key="frame" x="35" y="167" width="530" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -48,6 +41,9 @@
                                 <state key="normal" title="确认注册">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="IdentifyRegister:" destination="F8P-Iz-5MS" eventType="touchUpInside" id="erM-eV-r9U"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7H-Zc-UWA">
                                 <rect key="frame" x="548" y="160" width="17" height="17"/>
@@ -73,6 +69,13 @@
                                 </constraints>
                                 <state key="normal" image="登录_11"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="登录_03" translatesAutoresizingMaskIntoConstraints="NO" id="MP4-BM-O8Z">
+                                <rect key="frame" x="268" y="53" width="64" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="78c-Y4-bS4"/>
+                                    <constraint firstAttribute="width" constant="64" id="t1e-Px-H8t"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -82,6 +85,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="wfM-2q-rxo" secondAttribute="trailing" constant="15" id="6NH-he-WpN"/>
                             <constraint firstItem="SyZ-U4-8ng" firstAttribute="top" secondItem="FRJ-UF-w6L" secondAttribute="topMargin" constant="267" id="6f8-aa-fMI"/>
                             <constraint firstItem="egM-cf-ue5" firstAttribute="leading" secondItem="FRJ-UF-w6L" secondAttribute="leadingMargin" constant="15" id="6qK-NP-Bda"/>
+                            <constraint firstItem="MP4-BM-O8Z" firstAttribute="top" secondItem="JcG-mw-Rwr" secondAttribute="bottom" constant="20" id="BqV-KW-KzG"/>
                             <constraint firstItem="MP4-BM-O8Z" firstAttribute="centerX" secondItem="FRJ-UF-w6L" secondAttribute="centerX" id="EpP-Q3-juL"/>
                             <constraint firstItem="ht5-w7-qL0" firstAttribute="centerX" secondItem="FRJ-UF-w6L" secondAttribute="centerX" id="GJ5-RV-h4F"/>
                             <constraint firstItem="ht5-w7-qL0" firstAttribute="top" secondItem="FRJ-UF-w6L" secondAttribute="topMargin" constant="367" id="NEo-Uo-VFl"/>
@@ -106,6 +110,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="oLJ-Ny-omj"/>
+                                <exclude reference="hgB-04-0Rz"/>
                                 <exclude reference="lf0-16-Adq"/>
                             </mask>
                         </variation>

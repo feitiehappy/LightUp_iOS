@@ -23,6 +23,8 @@
     // 网络状态监听器
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     return YES;
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

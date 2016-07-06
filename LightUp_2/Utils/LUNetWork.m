@@ -7,6 +7,7 @@
 //
 
 #import "LUNetWork.h"
+#import "Utils.h"
 
 @implementation LUNetWork
 
@@ -14,7 +15,7 @@
     static LUNetWork *manager = nil;
     static dispatch_once_t pred;
     dispatch_once(&pred, ^{
-        manager = [[self alloc] initWithBaseURL:[NSURL URLWithString:@"https://ucqa.dawnlightning.com/"]];
+        manager = [[self alloc] initWithBaseURL:[NSURL URLWithString:BASE_URL]];
     });
     return manager;
 }
