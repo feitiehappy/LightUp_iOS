@@ -39,6 +39,14 @@
 		6A41732780C0CABA46021B38 /* Pods_LightUp_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5889FCA11D90C98D75B692D4 /* Pods_LightUp_2.framework */; };
 		6F06E0EF1D2D5DA5009CE068 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F06E0EC1D2D5DA5009CE068 /* Register.storyboard */; };
 		6F06E0F01D2D5DA5009CE068 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F06E0EE1D2D5DA5009CE068 /* RegisterViewController.m */; };
+		6FA79A1A1D2F96D100BEC096 /* MyMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA79A191D2F96D100BEC096 /* MyMessage.storyboard */; };
+		6FA79A1D1D2F971100BEC096 /* MyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA79A1C1D2F971100BEC096 /* MyMessageViewController.m */; };
+		6FA79A1F1D2F9F2400BEC096 /* MyAdvice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA79A1E1D2F9F2400BEC096 /* MyAdvice.storyboard */; };
+		6FA79A221D2F9F4100BEC096 /* MyAdviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA79A211D2F9F4100BEC096 /* MyAdviceViewController.m */; };
+		6FA79A241D2FA03600BEC096 /* AskAdvice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA79A231D2FA03600BEC096 /* AskAdvice.storyboard */; };
+		6FA79A271D2FA04800BEC096 /* AskAdviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA79A261D2FA04800BEC096 /* AskAdviceViewController.m */; };
+		6FA79A2A1D2FA14D00BEC096 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA79A291D2FA14D00BEC096 /* Setting.storyboard */; };
+		6FA79A2D1D2FA16200BEC096 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA79A2C1D2FA16200BEC096 /* SettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +128,18 @@
 		6F06E0EC1D2D5DA5009CE068 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Register.storyboard; path = Controllers/Register/Register.storyboard; sourceTree = "<group>"; };
 		6F06E0ED1D2D5DA5009CE068 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = Controllers/Register/RegisterViewController.h; sourceTree = "<group>"; };
 		6F06E0EE1D2D5DA5009CE068 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = Controllers/Register/RegisterViewController.m; sourceTree = "<group>"; };
+		6FA79A191D2F96D100BEC096 /* MyMessage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MyMessage.storyboard; path = "Controllers/我的消息/MyMessage.storyboard"; sourceTree = "<group>"; };
+		6FA79A1B1D2F971100BEC096 /* MyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyMessageViewController.h; path = "Controllers/我的消息/MyMessageViewController.h"; sourceTree = "<group>"; };
+		6FA79A1C1D2F971100BEC096 /* MyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyMessageViewController.m; path = "Controllers/我的消息/MyMessageViewController.m"; sourceTree = "<group>"; };
+		6FA79A1E1D2F9F2400BEC096 /* MyAdvice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MyAdvice.storyboard; path = "Controllers/我的咨询/MyAdvice.storyboard"; sourceTree = "<group>"; };
+		6FA79A201D2F9F4100BEC096 /* MyAdviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAdviceViewController.h; path = "Controllers/我的咨询/MyAdviceViewController.h"; sourceTree = "<group>"; };
+		6FA79A211D2F9F4100BEC096 /* MyAdviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAdviceViewController.m; path = "Controllers/我的咨询/MyAdviceViewController.m"; sourceTree = "<group>"; };
+		6FA79A231D2FA03600BEC096 /* AskAdvice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AskAdvice.storyboard; path = "Controllers/我要咨询/AskAdvice.storyboard"; sourceTree = "<group>"; };
+		6FA79A251D2FA04800BEC096 /* AskAdviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AskAdviceViewController.h; path = "Controllers/我要咨询/AskAdviceViewController.h"; sourceTree = "<group>"; };
+		6FA79A261D2FA04800BEC096 /* AskAdviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AskAdviceViewController.m; path = "Controllers/我要咨询/AskAdviceViewController.m"; sourceTree = "<group>"; };
+		6FA79A291D2FA14D00BEC096 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Setting.storyboard; path = "Controllers/设置/Setting.storyboard"; sourceTree = "<group>"; };
+		6FA79A2B1D2FA16200BEC096 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = "Controllers/设置/SettingViewController.h"; sourceTree = "<group>"; };
+		6FA79A2C1D2FA16200BEC096 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = "Controllers/设置/SettingViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +303,10 @@
 		21CE9E991CE4CDEE000CFBE1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6FA79A281D2FA11100BEC096 /* 设置 */,
+				6FA79A181D2F964300BEC096 /* 我要咨询 */,
+				6FA79A171D2F963C00BEC096 /* 我的咨询 */,
+				6FA79A161D2F962D00BEC096 /* 我的消息 */,
 				6F06E0F11D2D5DB2009CE068 /* Register */,
 				2171F3551CE8377800B46143 /* Login */,
 				21CE9EBB1CE4E631000CFBE1 /* Main */,
@@ -383,6 +407,46 @@
 			name = Register;
 			sourceTree = "<group>";
 		};
+		6FA79A161D2F962D00BEC096 /* 我的消息 */ = {
+			isa = PBXGroup;
+			children = (
+				6FA79A191D2F96D100BEC096 /* MyMessage.storyboard */,
+				6FA79A1B1D2F971100BEC096 /* MyMessageViewController.h */,
+				6FA79A1C1D2F971100BEC096 /* MyMessageViewController.m */,
+			);
+			name = "我的消息";
+			sourceTree = "<group>";
+		};
+		6FA79A171D2F963C00BEC096 /* 我的咨询 */ = {
+			isa = PBXGroup;
+			children = (
+				6FA79A1E1D2F9F2400BEC096 /* MyAdvice.storyboard */,
+				6FA79A201D2F9F4100BEC096 /* MyAdviceViewController.h */,
+				6FA79A211D2F9F4100BEC096 /* MyAdviceViewController.m */,
+			);
+			name = "我的咨询";
+			sourceTree = "<group>";
+		};
+		6FA79A181D2F964300BEC096 /* 我要咨询 */ = {
+			isa = PBXGroup;
+			children = (
+				6FA79A231D2FA03600BEC096 /* AskAdvice.storyboard */,
+				6FA79A251D2FA04800BEC096 /* AskAdviceViewController.h */,
+				6FA79A261D2FA04800BEC096 /* AskAdviceViewController.m */,
+			);
+			name = "我要咨询";
+			sourceTree = "<group>";
+		};
+		6FA79A281D2FA11100BEC096 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				6FA79A291D2FA14D00BEC096 /* Setting.storyboard */,
+				6FA79A2B1D2FA16200BEC096 /* SettingViewController.h */,
+				6FA79A2C1D2FA16200BEC096 /* SettingViewController.m */,
+			);
+			name = "设置";
+			sourceTree = "<group>";
+		};
 		C082738A401D801E1FB2FDF8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,7 +525,7 @@
 				TargetAttributes = {
 					211B03E01CE4814800731006 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = SFZK8C29QE;
+						DevelopmentTeam = S43V4G9QY6;
 					};
 					211B03F91CE4814800731006 = {
 						CreatedOnToolsVersion = 7.3;
@@ -498,7 +562,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA79A1F1D2F9F2400BEC096 /* MyAdvice.storyboard in Resources */,
 				2171F3571CE8378C00B46143 /* Login.storyboard in Resources */,
+				6FA79A241D2FA03600BEC096 /* AskAdvice.storyboard in Resources */,
 				211B03F41CE4814800731006 /* LaunchScreen.storyboard in Resources */,
 				21B28CCA1CE9FD1E004B41D6 /* HPCategoryCollectionCell.xib in Resources */,
 				21D1F1CE1CF41BD9001A4E5A /* HPTableCollectionViewCell.xib in Resources */,
@@ -506,6 +572,8 @@
 				211B03EF1CE4814800731006 /* Main.storyboard in Resources */,
 				2174FD131CEB4AA600B527D2 /* HPTableViewCell.xib in Resources */,
 				6F06E0EF1D2D5DA5009CE068 /* Register.storyboard in Resources */,
+				6FA79A1A1D2F96D100BEC096 /* MyMessage.storyboard in Resources */,
+				6FA79A2A1D2FA14D00BEC096 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,14 +650,18 @@
 				21195B5B1CEC670D00D39940 /* LUNetWork.m in Sources */,
 				21B28CD41CEAD900004B41D6 /* HPQuestionCell.m in Sources */,
 				214EA5AE1CFEF57900647286 /* HPTableCollectionView.m in Sources */,
+				6FA79A1D1D2F971100BEC096 /* MyMessageViewController.m in Sources */,
 				6F06E0F01D2D5DA5009CE068 /* RegisterViewController.m in Sources */,
 				21CE9EBE1CE4E697000CFBE1 /* SideMenuViewController.m in Sources */,
+				6FA79A221D2F9F4100BEC096 /* MyAdviceViewController.m in Sources */,
 				21186DFC1CEDDC02009F36D6 /* HomePageViewController.m in Sources */,
 				21CE9F101CE5EC00000CFBE1 /* Config.m in Sources */,
 				21CE9EB91CE4DF3F000CFBE1 /* UIView+frameAdjust.m in Sources */,
 				211B03E91CE4814800731006 /* AppDelegate.m in Sources */,
 				211B03E61CE4814800731006 /* main.m in Sources */,
 				21D1F1CC1CF41BB2001A4E5A /* HPTableCollectionViewCell.m in Sources */,
+				6FA79A2D1D2FA16200BEC096 /* SettingViewController.m in Sources */,
+				6FA79A271D2FA04800BEC096 /* AskAdviceViewController.m in Sources */,
 				2174FD111CEB4A8A00B527D2 /* HPTableViewCell.m in Sources */,
 				21CE9EC11CE58AC7000CFBE1 /* LUNavigationController.m in Sources */,
 				21CE9F0D1CE5C448000CFBE1 /* LUUser.m in Sources */,
@@ -743,11 +815,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LightUp_2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.xxgc.LightUp-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -757,11 +831,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LightUp_2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.xxgc.LightUp-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

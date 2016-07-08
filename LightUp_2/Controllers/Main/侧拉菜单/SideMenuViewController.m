@@ -14,7 +14,7 @@
 #import "LUUser.h"
 #import "Utils.h"
 #import "LoginViewController.h"
-
+#import "MyMessageViewController.h"
 #import <RESideMenu/RESideMenu.h>
 #import <Masonry/Masonry.h>
 
@@ -160,16 +160,57 @@ CGFloat const kCellIconHeigh = 21;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    switch (indexPath.row) {
-        case 0: {
-            
-        }
-            break;
-            
-        default:
-            break;
+    if (indexPath.row==1) {
+        UIStoryboard *MyMessage=[UIStoryboard storyboardWithName:@"MyMessage" bundle:nil];
+        UINavigationController *nav = (UINavigationController *)((UITabBarController *)self.sideMenuViewController.contentViewController);
+        UIViewController *MyMessageViewController=[MyMessage instantiateViewControllerWithIdentifier:@"MyMessage"];
+        [nav pushViewController:MyMessageViewController animated:YES];
+        
+        
+    }
+    
+    /*
+//    if (indexPath.row==1) {
+//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MyMessage" bundle:nil];
+//        LoginViewController *nav = [storyboard instantiateViewControllerWithIdentifier:@"MyMessage"];
+//        //[self setContentViewController:loginVC];
+//        [self presentViewController:nav animated:YES completion:nil];
+//    } else {
+//        return;
+//    }
+    
+    
+//    switch (indexPath.row) {
+//        case 0: {
+//            
+//        }
+//            break;
+//            
+//        default:
+//            break;
+//    }*/
+    
+    if (indexPath.row==2) {
+        UIStoryboard *MyAdvice=[UIStoryboard storyboardWithName:@"MyAdvice" bundle:nil];
+        UINavigationController *nav = (UINavigationController *)((UITabBarController *)self.sideMenuViewController.contentViewController);
+        UIViewController *MyAdviceViewController=[MyAdvice instantiateViewControllerWithIdentifier:@"MyAdvice"];
+        [nav pushViewController:MyAdviceViewController animated:YES];
+    }
+    
+    if (indexPath.row==3) {
+        UIStoryboard *AskAdvice=[UIStoryboard storyboardWithName:@"AskAdvice" bundle:nil];
+        UINavigationController *nav = (UINavigationController *)((UITabBarController *)self.sideMenuViewController.contentViewController);
+        UIViewController *AskAdviceViewController=[AskAdvice instantiateViewControllerWithIdentifier:@"AskAdvice"];
+        [nav pushViewController:AskAdviceViewController animated:YES];
+    }
+    
+    if (indexPath.row==4) {
+        UIStoryboard *Setting=[UIStoryboard storyboardWithName:@"Setting" bundle:nil];
+        UINavigationController *nav = (UINavigationController *)((UITabBarController *)self.sideMenuViewController.contentViewController);
+        UIViewController *SettingViewController=[Setting instantiateViewControllerWithIdentifier:@"Setting"];
+        [nav pushViewController:SettingViewController animated:YES];
     }
 }
 
